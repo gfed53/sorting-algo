@@ -1,9 +1,8 @@
 .outer-container {
-  text-align: center; }
+  text-align: center;
+  margin-top: 5em; }
 
 .inner-container {
-  border: 1px solid black;
-  width: 65em;
   margin: 0 auto;
   display: inline-block; }
   .inner-container section {
@@ -18,3 +17,13 @@
 .hidden {
   opacity: 0;
   transition: 200ms linear all; }
+
+body {
+  font-size: 1.3em; }
+
+.button-sort {
+  width: 7em;
+  font-size: 1.5em;
+  border: 1px solid white;
+  border-radius: 0.4em;
+  cursor: pointer; }
