@@ -7,9 +7,16 @@
 	<title>Sorting Algorithm</title>
 </head>
 <body>
+	<div ng-controller="CtrlMain as vm">
+		<ul>
+			<li ng-repeat="item in vm.items">{{ item }}</li>
+		</ul>
+		<button ng-click="vm.sort(vm.items)">Sort</button>
+	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-animate.min.js"></script>-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-animate.min.js"></script>
 	<script src="app.js"></script>
+	<script src="components/library.js"></script>
 </body>
 </html>
