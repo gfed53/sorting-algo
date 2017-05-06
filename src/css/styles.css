@@ -1,0 +1,20 @@
+.outer-container {
+  text-align: center; }
+
+.inner-container {
+  border: 1px solid black;
+  width: 65em;
+  margin: 0 auto;
+  display: inline-block; }
+  .inner-container section {
+    margin: 2em;
+    min-width: 15em;
+    display: inline-block;
+    text-align: center;
+    transition: 200ms linear all; }
+    .inner-container section ul {
+      list-style-type: none; }
+
+.hidden {
+  opacity: 0;
+  transition: 200ms linear all; }

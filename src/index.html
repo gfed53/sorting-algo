@@ -5,13 +5,25 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Sorting Algorithm</title>
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-	<div ng-controller="CtrlMain as vm">
-		<ul>
-			<li ng-repeat="item in vm.items">{{ item }}</li>
-		</ul>
-		<button ng-click="vm.sort(vm.items)">Sort</button>
+	<div ng-controller="CtrlMain as vm" class="outer-container">
+		<div class="inner-container">
+			<section class="section-left" ng-class="{'hidden': vm.sorted}">
+				<ul id="list-unsorted">
+					<li ng-repeat="item in vm.items">{{ item }}</li>
+				</ul>
+			</section>
+			<section class="section-mid">
+				<button ng-click="vm.sort(vm.items)">Sort</button>
+			</section>
+			<section  class="section-right" ng-class="{'hidden': !vm.sorted}">
+				<ul id="list-sorted">
+					<li ng-repeat="item in vm.sortedItems">{{ item }}</li>
+				</ul>
+			</section>
+		</div>
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>

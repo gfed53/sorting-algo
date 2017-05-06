@@ -18,7 +18,8 @@ function mySorter(){
 		items[secondIndex] = temp;
 	}
 
-	function sort(list){
+	function sort(_list){
+		var list = [].slice.call(_list);
 		for(let i = 0; i<list.length; i++){
 			console.log('iteration:', i);
 	    	//We chop off i from the length of each iteration because, with each iteration, we will pinpoint the last item that hasn't already been pushed to the end of the array.
