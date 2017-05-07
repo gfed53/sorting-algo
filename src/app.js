@@ -26,7 +26,4 @@ function CtrlMain(mySorter){
 		vm.sortedItems = mySorter.sort(list);
 		vm.sorted = true;
 	}
-
-
-
 }
