@@ -17,9 +17,10 @@
 				</ul>
 			</section>
 			<section class="section-mid">
-				<button class="button-sort" ng-click="vm.sort(vm.items)">
-				<span ng-if="!vm.sorted">Sort</span>
-				<span ng-if="vm.sorted">Sorted!</span></button>
+				<button  class="button-sort" ng-click="vm.sort(vm.items)">
+					<span ng-if="!vm.sorted">Sort</span>
+					<span ng-if="vm.sorted">Sorted!</span>
+				</button>
 			</section>
 			<section  class="section-right" ng-class="{'hidden': !vm.sorted}">
 				<ul id="list-sorted">
@@ -30,7 +31,6 @@
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-animate.min.js"></script>
 	<script src="app.js"></script>
 	<script src="components/library.js"></script>
 </body>
