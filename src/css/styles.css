@@ -1,3 +1,10 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
 .outer-container {
   text-align: center;
   margin-top: 5em; }
