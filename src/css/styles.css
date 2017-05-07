@@ -5,6 +5,9 @@
   margin: 0;
   padding: 0; }
 
+body {
+  background-color: #19B5FE; }
+
 .outer-container {
   text-align: center;
   margin-top: 5em; }
@@ -23,14 +26,24 @@
 
 .hidden {
   opacity: 0;
-  transition: 200ms linear all; }
+  -webkit-transform: translateY(3em);
+          transform: translateY(3em); }
 
 body {
-  font-size: 1.3em; }
+  font-size: 1.3em;
+  color: #ECF0F1;
+  font-family: 'Lato', sans-serif; }
 
 .button-sort {
+  transition: 200ms ease-in-out all;
   width: 7em;
+  background-color: #19B5FE;
+  color: #ECF0F1;
   font-size: 1.5em;
-  border: 1px solid white;
+  border: 2px solid #ECF0F1;
   border-radius: 0.4em;
   cursor: pointer; }
+
+.button-sort:hover {
+  background-color: #ECF0F1;
+  color: #19B5FE; }
